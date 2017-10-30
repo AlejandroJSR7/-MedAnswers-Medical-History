@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Medical History</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" integrity="sha256-fmMNkMcjSw3xcp9iuPnku/ryk9kaWgrEbfJfKmdZ45o=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/medanswers.css">
+
+
+</head>
+<body>
+  <div class="medical-history">
+    <div class="spacer"></div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <a class="medical-history__back" href="javascript:;">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>      
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3 class="medical-history__title text-center">Medical History</h3>
+      </div>
+      <div class="col-xs-12 col-md-4 text-right">
+        <button type="button" class="medical-history__done btn btn-success">Done</button>
+      </div>
+    </div>
+
+    <div class="medical-history__progress text-center">
+      <p class="medical-history__progress__text"><span>5</span>% Complete</p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+          <span class="sr-only"><span>5</span>% Complete</span>
+        </div>
+      </div> 
+    </div>
+
+    <div class="text-center">
+      <p class="medical-history__description">All medical history is anonymized, and it helps our experts answer your questions.</p>
+    </div>
+
+
+    <div class="medical-history__box">
+      <form>
+        <div class="medical-history__subtitle">
+          <i class="medical-history__subtitle__icon"></i>
+          <strong>About Me</strong>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label for="">Gender</label>
+              <div>
+                <input class="btn btn-default" type="button" value="Female">
+                <input class="btn btn-default" type="button" value="Male">
+                <input class="btn btn-default" type="button" value="Trans/Other">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="form-group">
+                  <label for="">Date of Birth</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="form-group">
+                  <label for="">Height</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="form-group">
+                  <label for="">Weight</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--/row-->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label for="">Location</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label for="">Ethnicity</label>
+                  <select name="" id="" class="form-control">
+                    <option value="" default></option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label for="">Relationship Status</label>
+                  <select name="" id="" class="form-control">
+                    <option value="" default></option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--/row-->
+        <div class="spacer"></div>
+        <div class="medical-history__subtitle">
+          <i class="medical-history__subtitle__icon"></i>
+          <strong>Fertility History</strong>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label for="">Trying to conceive since</label>
+              <select name="" id="" class="form-control">
+                <option value="" default></option>
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+                <option value="">D</option>
+              </select>
+            </div>
+          </div>
+        </div> <!--/row-->
+        <label>Pregnancy history (how many ...)</label>
+        <span class="spacer--min"></span>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="counter">
+              <label>cats</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">1</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+            <div class="counter">
+              <label>live births</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">0</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+            <div class="counter">
+              <label>chremical pregnancies</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">0</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+            <div class="counter">
+              <label>miscarriages</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">0</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="counter">
+              <label>tubal/ectopic pregnancies</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">0</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+            <div class="counter">
+              <label>abortions</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">0</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+            <div class="counter">
+              <label>stillbirths</label>
+              <div class="counter__clicks">
+                <button class="counter__clicks__less">-</button>
+                <span class="counter__clicks__number">0</span>
+                <button class="counter__clicks__more">+</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /row-->
+        <div class="medical-history__subtitle">
+          <i class="medical-history__subtitle__icon"></i>
+          <strong>Diagnosis</strong>
+        </div>
+        <label>I have been diagnosis with ...</label>
+        <span class="spacer--min"></span>
+        <div class="custom-checks">
+          <label class="custom-check">
+            <span class="custom-check__text">Cancer</span>
+            <input type="checkbox" value="" checked>
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Combination Infertility</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Endrometriosis</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Fallopian tube damage/blockage</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Male tube blockages</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Ovulation disorder</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Primary ovarian insuficiency</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Pelvic adhesions</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+          <label class="custom-check">
+            <span class="custom-check__text">Sperm problems</span>
+            <input type="checkbox" value="">
+            <span class="custom-check__mark"></span>
+          </label>
+        </div>
+        <div class="medical-history__subtitle">
+          <i class="medical-history__subtitle__icon"></i>
+          <strong>Test</strong>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <label>My test results</label>
+            <a href="javascript:;" class="add-result">
+              <button class="counter__clicks__more">+</button>
+              <strong class="text-success">ADD RESULT</strong>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <label>Partners test results</label>
+            <a href="javascript:;" class="add-result">
+              <button class="counter__clicks__more">+</button>
+              <strong class="text-success">ADD RESULT</strong>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

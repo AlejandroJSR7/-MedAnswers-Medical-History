@@ -1,0 +1,192 @@
+html, body {
+  min-height: 100%;
+}
+body {
+  background: -moz-linear-gradient(top, #1646f9, #0047D9 49%, #0047D9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, top, right, color-stop(49%, #1646f9), color-stop(48%,#0047D9), color-stop(100%, #0047D9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1646f9 49%,#0047D9 49%,#0047D9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1646f9 49%, #0047D9 49%, #0047D9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1646f9 49%, #0047D9 49%, #0047D9 100%); /* IE10+ */
+  background: linear-gradient(top, #1646f9 49%,#0047D9 49%,#0047D9 100%);
+  font-family: 'Open Sans';
+}
+
+.medical-history {
+  margin: 0 auto;
+  max-width: 750px;
+}
+.medical-history label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.medical-history input.form-control,
+.medical-history select.form-control {
+  background-color: #ECF0F4
+}
+.medical-history .spacer,
+.medical-history .spacer--min {
+  border-radius: 2px;
+  display: block;
+  height: 2px;
+}
+.medical-history .spacer {padding-bottom: 19px; padding-top: 19px;}
+.medical-history .spacer--min {padding-bottom: 4px; padding-top: 4px;}
+.medical-history__back {
+  color: #ffffff;
+  font-size: 22px;
+  display: inline-block
+}
+.medical-history__title {
+  color: #ffffff;
+  margin: 0;
+  text-transform: capitalize;
+}
+.medical-history__done {
+  background-color: #00DF92;
+  border-radius: 2px;
+  border: none;
+  font-weight: 300;
+  padding: 12px 30px;
+}
+.medical-history__progress {
+  color: #ffffff;
+  max-width: 30%;
+  margin: 0 auto;
+}
+.medical-history__progress .progress {
+  background-color: #003CDD;
+  height: 5px;
+}
+.medical-history .progress-bar {
+  background-color: #F4675C;
+}
+.medical-history__description {
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.medical-history__box {
+  box-shadow:
+    -3px 0 0px -1px #C3D0ED,
+    5px 0px 5px 0px blue;
+  min-height: 200px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 0 auto 40px;
+  padding: 20px 20px 40px;
+}
+.medical-history__subtitle {
+  color: #121840;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.medical-history__subtitle__icon {}
+.medical-history__subtitle strong {}
+.counter {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.counter label {
+  display: block;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0;
+  text-transform: lowercase;
+}
+.counter__clicks {float: right;}
+.counter__clicks__number {
+  font-size: 30px;
+  line-height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: lowercase;
+  vertical-align: top;
+}
+.counter__clicks__less {background-color: #D5DDE7;}
+.counter__clicks__more {background-color: #00DF92;}
+.counter__clicks__less, .counter__clicks__more {
+  border-radius: 100%;
+  border: none;
+  color: white;
+  height: 30px;
+  padding: 0;
+  width: 30px;
+}
+
+.custom-checks {
+  overflow: hidden;
+}
+.custom-check {
+  float: left;
+  width: 49%;
+}
+.custom-check {
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  position: relative;
+  text-transform: lowercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.custom-check input {
+  position: absolute;
+  opacity: 0;
+}
+.custom-check__mark {
+  background-color: #eee;
+  border-radius: 100%;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+.custom-check:hover input ~ .custom-check__mark {
+  background-color: #ccc;
+}
+.custom-check input:checked ~ .custom-check__mark {
+  background-color: #00DF92;
+}
+.custom-check__mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom-check input:checked ~ .custom-check__mark:after {
+  display: block;
+}
+.custom-check .custom-check__mark:after {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  height: 10px;
+  left: 10px;
+  top: 7px;
+  width: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.custom-check__text {
+  /* color: #989AA8; */
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.add-result {
+  display: block;
+}
+.add-result strong {
+  color: #00DF92;
+  display: inline-block;
+  margin-left: 10px;
+}
